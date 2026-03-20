@@ -64,6 +64,10 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: '/utility/logo.png',
+    apple: '/utility/logo.png',
+  },
 };
 
 export default function RootLayout({ children }) {
