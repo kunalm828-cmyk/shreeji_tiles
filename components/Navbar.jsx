@@ -18,7 +18,7 @@ export default function Navbar() {
       }
 
       // Scrollspy logic
-      const sections = ['home', 'about', 'products', 'gallery', 'services', 'contact'];
+      const sections = ['home', 'about', 'products', 'services', 'gallery', 'contact'];
       let currentSection = 'home';
       
       for (const section of sections) {
@@ -26,7 +26,8 @@ export default function Navbar() {
         if (el) {
           const rect = el.getBoundingClientRect();
           // Check if top of section is inside viewport or slightly above
-          if (rect.top <= 150) {
+          // Uses window.innerHeight * 0.5 to trigger when section enters the middle half of screen
+          if (rect.top <= window.innerHeight * 0.5) {
             currentSection = section;
           }
         }
