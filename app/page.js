@@ -16,6 +16,12 @@ import WhatsAppFloat from '../components/WhatsAppFloat';
 
 export default function Home() {
   useEffect(() => {
+    // Prevent browser from restoring previous scroll position on refresh
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     // --- Global Scroll Reveal Animation ---
     const revealElements = document.querySelectorAll('.reveal');
 
@@ -51,10 +57,10 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
-      <Gallery />
+      <Marvelous />
       <Services />
       <Stats />
-      <Marvelous />
+      <Gallery />
       <Testimonials />
       <Contact />
       <Footer />

@@ -69,43 +69,87 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'Shreeji Tiles',
-    image: 'https://shreejitiles.com/utility/logo.png',
-    '@id': 'https://shreejitiles.com',
-    url: 'https://shreejitiles.com',
-    telephone: '+919898713167',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'B/H, Samruddhi Complex, Shed No. 10 Anand Estate, Dabhoi, Pratap Nagar Rd, opp. Yamuna Mill Road',
-      addressLocality: 'Vadodara',
-      addressRegion: 'GJ',
-      postalCode: '390004',
-      addressCountry: 'IN'
-    },
-    openingHoursSpecification: [
+    '@graph': [
       {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '10:00',
-        closes: '20:00'
+        '@type': 'HomeGoodsStore',
+        name: 'Shreeji Tiles',
+        image: 'https://shreejitiles.com/utility/logo.png',
+        '@id': 'https://shreejitiles.com',
+        url: 'https://shreejitiles.com',
+        telephone: '+919898713167',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'B/H, Samruddhi Complex, Shed No. 10 Anand Estate, Dabhoi, Pratap Nagar Rd, opp. Yamuna Mill Road',
+          addressLocality: 'Vadodara',
+          addressRegion: 'GJ',
+          postalCode: '390004',
+          addressCountry: 'IN'
+        },
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            opens: '10:00',
+            closes: '20:00'
+          },
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: 'Sunday',
+            opens: '11:00',
+            closes: '13:00'
+          }
+        ],
+        sameAs: [
+          'https://www.facebook.com/shreeji.tiles.3?mibextid=wwXIfr&rdid=BrIWvDZIbuv9mV0D',
+          'https://www.instagram.com/shreeji_tiles?igsh=c296cnVlamltYTBl'
+        ]
       },
       {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Sunday',
-        opens: '11:00',
-        closes: '13:00'
+        '@type': 'ItemList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            item: {
+              '@type': 'Product',
+              name: 'Premium Ceramic Tiles Vadodara',
+              image: 'https://shreejitiles.com/utility/logo.png',
+              description: 'High quality ceramic and porcelain floor tiles available in Vadodara showroom.',
+              brand: { '@type': 'Brand', name: 'Shreeji Tiles' },
+              offers: {
+                '@type': 'Offer',
+                priceCurrency: 'INR',
+                availability: 'https://schema.org/InStock',
+                areaServed: 'Vadodara'
+              }
+            }
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            item: {
+              '@type': 'Product',
+              name: 'Luxury Bath Fittings & Sanitaryware Vadodara',
+              image: 'https://shreejitiles.com/utility/logo.png',
+              description: 'Top-rated sanitaryware and bath fitting supplier in Gujarat.',
+              brand: { '@type': 'Brand', name: 'Shreeji Tiles' },
+              offers: {
+                '@type': 'Offer',
+                priceCurrency: 'INR',
+                availability: 'https://schema.org/InStock',
+                areaServed: 'Vadodara'
+              }
+            }
+          }
+        ]
       }
-    ],
-    sameAs: [
-      'https://www.facebook.com/shreeji.tiles.3?mibextid=wwXIfr&rdid=BrIWvDZIbuv9mV0D',
-      'https://www.instagram.com/shreeji_tiles?igsh=c296cnVlamltYTBl'
     ]
   };
 
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <script
           type="application/ld+json"

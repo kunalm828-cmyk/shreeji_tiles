@@ -1,11 +1,16 @@
 "use client";
 import { useEffect, useState, useRef } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
     const slides = [
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2000&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2000&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000&auto=format&fit=crop"
+        "/utility/hero/3d-rendering-modern-design-marble-tile-toilet-bathroom-wardrobe-with-walk-closet.jpg",
+        "/utility/hero/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge.jpg",
+        "/utility/hero/beautiful-shot-modern-house-bathroom-with-technology-art.jpg",
+        "/utility/hero/marble-kitchen-gas-stove-contemporary-interior.jpg",
+        "/utility/hero/neon-robot-vacuum-cleaner.jpg",
+        "/utility/hero/photorealistic-stone-wall-surface-used-interior-design-2.jpg",
+        "/utility/hero/photorealistic-stone-wall-surface-used-interior-design.jpg"
     ];
     const [currentSlide, setCurrentSlide] = useState(0);
     const intervalRef = useRef(null);
@@ -59,28 +64,42 @@ export default function Hero() {
     }, []);
 
     return (
-        <section 
-            className="hero" 
+        <section
+            className="hero"
             id="home"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
         >
             {slides.map((url, i) => (
-                <div key={i} className={`hero-slide ${i === currentSlide ? 'active' : ''}`} style={{ backgroundImage: `url('${url}')` }}></div>
+                <div key={i} className={`hero-slide ${i === currentSlide ? 'active' : ''}`} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+                    <Image 
+                        src={url} 
+                        alt={`Hero Slide ${i + 1}`} 
+                        fill 
+                        priority={i === 0} 
+                        quality={85}
+                        style={{ objectFit: 'cover' }} 
+                        sizes="100vw"
+                    />
+                </div>
             ))}
-            
+
             <div className="hero-overlay"></div>
             <div className="container hero-content">
-                <h1>Where Style Meets<br/>Durability</h1>
-                <p className="hero-subtitle">Discover a World of Tiles, Sanitaryware & Bath Fittings</p>
-                <p className="hero-desc">Transform Your Kitchen with Luxury Tiles</p>
+                <h1>Premium Tiles Showroom<br />in Vadodara</h1>
+                <p className="hero-subtitle">Discover a World of Ceramic Tiles, Floor Tiles, Sanitaryware & Bath Fittings</p>
+                <p className="hero-desc">The top-rated tiles dealer in Vadodara for home and kitchen makeovers.</p>
+                <div className="hero-ctas">
+                    <a href="tel:+919898713167" className="btn btn-primary">Call Now</a>
+                    <a href="#contact" className="btn btn-outline btn-outline-white">Visit Showroom</a>
+                </div>
             </div>
             <div className="hero-slider-dots">
                 {slides.map((_, i) => (
-                    <span 
-                        key={i} 
-                        className={`dot ${i === currentSlide ? 'active' : ''}`} 
+                    <span
+                        key={i}
+                        className={`dot ${i === currentSlide ? 'active' : ''}`}
                         onClick={() => { goToSlide(i); resetSlider(); }}
                     ></span>
                 ))}

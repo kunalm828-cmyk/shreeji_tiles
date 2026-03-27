@@ -3,10 +3,10 @@ export default function About() {
     <section className="about section-padding" id="about">
         <div className="container about-container">
             <div className="about-content reveal">
-                <h2>About Shreeji Tiles</h2>
+                <h2>Best Tiles Dealer in Vadodara</h2>
                 <div className="divider"></div>
-                <p>Since 2000, Shreeji Tiles has been the trusted destination for premium tiles, sanitaryware, and bath fittings. We pride ourselves on offering an extensive collection that combines aesthetic excellence with functional durability.</p>
-                <p>Our experienced team provides personalized consultation to help you transform your vision into reality, whether it&apos;s a modern kitchen, luxurious bathroom, or elegant living space.</p>
+                <p>Since 2000, Shreeji Tiles has been the trusted destination for premium ceramic tiles Vadodara, sanitaryware, and bath fittings. As a leading floor tiles showroom Vadodara, we pride ourselves on offering an extensive collection that combines aesthetic excellence with functional durability.</p>
+                <p>Our experienced team provides personalized consultation to help you transform your vision into reality. If you are looking for a tiles shop in Vadodara for a modern kitchen, luxurious bathroom, or elegant living space, we have the perfect solution for you.</p>
                 
                 <div className="about-features">
                     <div className="feature-item">
@@ -40,7 +40,7 @@ export default function About() {
                 </div>
             </div>
             <div className="about-image-wrapper reveal">
-                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1000&auto=format&fit=crop" alt="Showroom" className="about-img" />
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1000&auto=format&fit=crop" alt="Premium marble tiles in Vadodara showroom" className="about-img" loading="lazy" decoding="async" />
                 <div className="stats-badge">
                     <h3>9000+</h3>
                     <p>Happy Customers</p>

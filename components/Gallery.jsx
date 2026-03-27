@@ -29,7 +29,7 @@ export default function Gallery() {
                   {images.map((img, idx) => (
                       <TiltWrapper key={idx} className={`gallery-item reveal ${img.itemClass}`}>
                           <div onClick={() => setActiveImage(img)} style={{ cursor: 'pointer', height: '100%' }}>
-                              <img src={img.src} alt={img.text.replace('\n', ' ')} />
+                              <img src={img.src} alt={img.text.replace('\n', ' ')} loading="lazy" decoding="async" />
                               <div className={`gallery-text ${img.class}`} style={{ transform: 'translateZ(30px)' }}>
                                 {img.text.split('\n').map((line, i) => <span key={i}>{line}{i === 0 && img.text.includes('\n') ? <br/> : ''}</span>)}
                               </div>
@@ -54,7 +54,6 @@ export default function Gallery() {
               onClick={(e) => e.stopPropagation()}
             >
                 <img src={activeImage.src} alt={activeImage.text.replace('\n', ' ')} className="gallery-modal-img" />
-                <h3 className="gallery-modal-title">{activeImage.text.replace('\n', ' ')}</h3>
             </div>
         </div>
       )}

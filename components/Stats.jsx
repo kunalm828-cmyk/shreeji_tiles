@@ -46,7 +46,7 @@ export default function Stats() {
 
     const statItems = [
         { target: 25, label: "Years Experience" },
-        { target: 9000, label: "Happy Customers" },
+        { target: 27000, label: "Happy Clients" },
         { target: 15000, label: "Product Varieties" },
         { target: 24, label: "Customer Support" }
     ];

@@ -169,9 +169,9 @@ h6 {
 
 .navbar.scrolled {
     top: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
     padding: 8px 30px;
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -180,6 +180,15 @@ h6 {
 
     width: calc(100% - 40px);
     max-width: 1050px;
+}
+
+/* Restore original extremely translucent blur strictly for Safari */
+@supports (-webkit-hyphens: none) {
+    .navbar.scrolled {
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+    }
 }
 
 .nav-container {
@@ -242,7 +251,7 @@ h6 {
     height: 80vh;
     min-height: 600px;
     background-color: #333;
-    /* Fallback */
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -305,6 +314,20 @@ h6 {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
     font-family: var(--font-body);
+}
+
+.hero-ctas {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-ctas .btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
 }
 
 .hero-slider-dots {
@@ -407,6 +430,16 @@ h6 {
 
 .btn-outline:hover {
     background-color: var(--light-bg);
+}
+
+.btn-outline-white {
+    border-color: var(--white) !important;
+    color: var(--white) !important;
+}
+
+.btn-outline-white:hover {
+    background-color: var(--white) !important;
+    color: var(--primary-color) !important;
 }
 
 /* =========================================
@@ -527,6 +560,9 @@ h6 {
     transition: var(--transition);
     text-align: center;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-img {
@@ -1441,41 +1477,27 @@ h6 {
 
 /* Product Cards */
 .product-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+    perspective: 1000px;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-.card-img img {
-    transition: var(--transition);
+.card-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #f0f0f0;
 }
 
-.product-card:hover .card-img img {
-    transform: scale(1.08);
-    filter: brightness(0.75);
-}
 
-/* Gallery Images */
-.gallery-item img {
-    transition: var(--transition);
-}
-
-.gallery-item:hover img {
-    transform: scale(1.08);
-    filter: brightness(0.75);
-}
-
-/* Marvelous Showcase Cards */
+.card-img img,
+.gallery-item img,
 .marv-card img {
     transition: var(--transition);
-}
-
-.marv-card:hover img {
-    transform: scale(1.08);
-    filter: brightness(0.75);
 }
 
 .marv-card .explore-badge {
@@ -1578,9 +1600,28 @@ h6 {
 }
 
 /* =========================================
-   RESPONSIVE DESIGN (MOBILE)
+   RESPONSIVE DESIGN (TABLETS & MOBILE)
 ========================================= */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px !important;
+    }
+    .back-to-top {
+        display: none !important;
+    }
+    .products-grid,
+    .features-grid,
+    .gallery-grid,
+    .testimonials-grid,
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
 @media (max-width: 768px) {
+    .container {
+        padding: 0 30px !important;
+    }
     .section-padding {
         padding: 40px 0 !important;
     }
@@ -1611,18 +1652,30 @@ h6 {
     .nav-links {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(243, 244, 246, 0.95);
+        top: calc(100% + 5px);
+        right: 30px;
+        left: auto;
+        width: 220px;
+        background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(12px);
         flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        padding: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        text-align: left;
+        align-items: flex-start;
+        border: 1px solid rgba(0,0,0,0.05);
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: left;
+        padding: 12px 15px;
+        border-radius: 8px;
     }
 
     .nav-contact {
@@ -1631,12 +1684,25 @@ h6 {
 
     /* Hero */
     .hero {
-        min-height: 400px;
-        height: 60vh;
+        min-height: 550px;
+        height: 75vh;
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .hero-ctas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-ctas .btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
     }
 
     .slider-arrows {
@@ -1660,6 +1726,7 @@ h6 {
     .contact-grid,
     .footer-grid {
         grid-template-columns: 1fr !important;
+        gap: 20px !important;
     }
 
     /* Gallery */
@@ -1825,4 +1892,64 @@ h6 {
     .marv-card .explore-badge {
         display: none !important; /* Optional: hide explore badge entirely on mobile */
     }
+}
+
+/* =========================================
+   PREMIUM GOLDEN CARD ENHANCEMENTS (REVOLVING STRIPS)
+========================================= */
+.premium-gold-card {
+    position: relative;
+    border: none !important;
+    background: transparent !important;
+    z-index: 1;
+    isolation: isolate;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.premium-gold-card::before {
+    content: '';
+    position: absolute;
+    /* Create a massive circle mask rotating endlessly */
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* Two opposite strips rendered cleanly along the conic slice arc */
+    background: conic-gradient(from 0deg at 50% 50%, 
+                transparent 0deg, 
+                transparent 60deg, 
+                #D4AF37 120deg, 
+                transparent 120deg, 
+                transparent 240deg, 
+                #FFD700 300deg, 
+                transparent 300deg);
+    animation: goldRevolve 6s linear infinite;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+.premium-gold-card::after {
+    /* Innermost masking solid plate keeping the 3px perimeter border exposed */
+    content: '';
+    position: absolute;
+    inset: 3px; 
+    background: var(--white);
+    border-radius: 6px; 
+    z-index: -1;
+}
+
+.premium-gold-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7) !important;
+}
+
+.premium-gold-card:hover::before {
+    animation: none !important; 
+    background: linear-gradient(60deg, #D4AF37, #FFD700, #fff7b0, #D4AF37);
+}
+
+@keyframes goldRevolve {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

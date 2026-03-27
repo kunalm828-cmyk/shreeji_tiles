@@ -2,12 +2,14 @@
 import { useState, useEffect } from 'react';
 
 const slides = [
-  { img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2000&auto=format&fit=crop", 
+  { img: "/utility/hero/f84d3ecffdc64bbeacb3347c725d21aa.jpg", 
     tagline: "ELEVATING LIFESTYLES", title: "Premium Tiles &\nSanitaryware" },
-  { img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000&auto=format&fit=crop", 
+  { img: "/utility/hero/7666e05efd36894028e4b6a46adf8a96.jpg", 
     tagline: "ELEGANT DESIGNS", title: "Redefine Your\nLiving Spaces" },
-  { img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2000&auto=format&fit=crop", 
-    tagline: "LUXURY REDEFINED", title: "Exquisite Bath\nCollections" }
+  { img: "/utility/hero/3d5a92b5ccd1bc60cdff2ed9113403cc.jpg", 
+    tagline: "LUXURY REDEFINED", title: "Exquisite Bath\nCollections" },
+  { img: "/utility/hero/Screenshot 2026-03-25 at 11.05.34.jpg", 
+    tagline: "ULTIMATE DURABILITY", title: "Heavy Duty &\nParking Tiles" }
 ];
 
 export default function HeroSlider() {

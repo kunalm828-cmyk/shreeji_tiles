@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
             ))}
           </div>
           <div className="feature-image reveal">
-            <img src="https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?q=80&w=1000&auto=format&fit=crop" alt="Modern Interior" />
+            <img src="https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?q=80&w=1000&auto=format&fit=crop" alt="Modern Interior" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>

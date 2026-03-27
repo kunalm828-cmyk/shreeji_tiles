@@ -99,7 +99,7 @@ export default function ContactForm() {
               </div>
               
               <button type="submit" className="btn-primary btn-full">Submit Inquiry</button>
-              <p className="form-note">We'll respond to your inquiry within 24 hours. For urgent queries, please call us directly.</p>
+              <p className="form-note">We&apos;ll respond to your inquiry within 24 hours. For urgent queries, please call us directly.</p>
             </form>
           </div>
         </div>
