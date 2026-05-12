@@ -157,7 +157,7 @@ export default function Marvelous() {
                     onTouchMove={onTouchMove}
                     onTouchEnd={onTouchEnd}
                 >
-                    <button className="marv-nav left-nav" onClick={handlePrev}><i className="fa-solid fa-chevron-left"></i></button>
+                    <button className="marv-nav left-nav" onClick={handlePrev} suppressHydrationWarning><i className="fa-solid fa-chevron-left"></i></button>
                     <div className="marvelous-grid" ref={gridRef}>
                         {cards.map((card, i) => (
                             <div key={i} className="marv-card" onClick={() => setSelectedImage(card.img)} style={{ cursor: 'zoom-in' }}>
@@ -166,7 +166,7 @@ export default function Marvelous() {
                             </div>
                         ))}
                     </div>
-                    <button className="marv-nav right-nav" onClick={handleNext}><i className="fa-solid fa-chevron-right"></i></button>
+                    <button className="marv-nav right-nav" onClick={handleNext} suppressHydrationWarning><i className="fa-solid fa-chevron-right"></i></button>
                     
                     <div className="marvelous-dots">
                         {Array.from({ length: MARV_COUNT }).map((_, i) => (
@@ -175,6 +175,7 @@ export default function Marvelous() {
                                 className={`dot ${i === currentMarvIndex ? 'active' : ''}`}
                                 onClick={() => goToSlide(i)}
                                 style={{ cursor: 'pointer' }}
+                                suppressHydrationWarning
                             ></span>
                         ))}
                     </div>

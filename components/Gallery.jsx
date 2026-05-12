@@ -25,6 +25,10 @@ export default function Gallery() {
     <>
       <section className="gallery-section section-padding" id="gallery">
           <div className="container gallery-container">
+              <div className="section-header center reveal">
+                  <h2>Our Tile Categories</h2>
+                  <p>Explore our vast collection of GVT, PGVT, and Porcelain tiles available in our Vadodara showroom.</p>
+              </div>
               <div className="gallery-grid">
                   {images.map((img, idx) => (
                       <TiltWrapper key={idx} className={`gallery-item reveal ${img.itemClass}`}>

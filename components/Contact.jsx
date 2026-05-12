@@ -101,26 +101,26 @@ export default function Contact() {
                         <div className="form-row">
                             <div className="form-group">
                                 <label>Full Name *</label>
-                                <input type="text" name="name" placeholder="Your full name" required />
+                                <input type="text" name="name" placeholder="Your full name" required suppressHydrationWarning />
                             </div>
                             <div className="form-group">
                                 <label>Email Address *</label>
-                                <input type="email" name="email" placeholder="your.email@example.com" required />
+                                <input type="email" name="email" placeholder="your.email@example.com" required suppressHydrationWarning />
                             </div>
                         </div>
                         <div className="form-row">
                             <div className="form-group">
                                 <label>Address</label>
-                                <input type="text" name="address" placeholder="Your Address" />
+                                <input type="text" name="address" placeholder="Your Address" suppressHydrationWarning />
                             </div>
                             <div className="form-group">
                                 <label>Mobile Number</label>
-                                <input type="tel" name="phone" placeholder="Your Mobile Number" />
+                                <input type="tel" name="phone" placeholder="Your Mobile Number" suppressHydrationWarning />
                             </div>
                         </div>
                         <div className="form-group">
                             <label>Project Type</label>
-                            <select name="project_type">
+                            <select name="project_type" suppressHydrationWarning>
                                 <option>Select your project type</option>
                                 <option>Bathroom Renovation</option>
                                 <option>Kitchen Makeover</option>
@@ -130,11 +130,11 @@ export default function Contact() {
                         </div>
                         <div className="form-group">
                             <label>Message</label>
-                            <textarea name="message" rows="4" placeholder="Tell us about your project requirements, preferred styles, budget, or any specific questions..."></textarea>
+                             <textarea name="message" rows="4" placeholder="Tell us about your project requirements, preferred styles, budget, or any specific questions..." suppressHydrationWarning></textarea>
                         </div>
                         
                         <input type="hidden" name="_captcha" value="false" />
-                        <button type="submit" className="btn-primary btn-full">Submit Inquiry</button>
+                        <button type="submit" className="btn-primary btn-full" suppressHydrationWarning>Submit Inquiry</button>
                         <p className="form-note">We&apos;ll respond to your inquiry within 24 hours. For urgent queries, please call us directly.</p>
                     </form>
                 </div>

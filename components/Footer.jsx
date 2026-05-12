@@ -84,16 +84,16 @@ export default function Footer() {
                     <h4>Stay Updated</h4>
                     <p className="footer-desc">Get updates on new arrivals & trends</p>
                     <form onSubmit={handleSubscribe} className="subscribe-form">
-                        <input type="email" name="email" placeholder="Your email address" required />
+                        <input type="email" name="email" placeholder="Your email address" required suppressHydrationWarning />
                         <input type="hidden" name="_captcha" value="false" />
-                        <button type="submit" className="btn-white">Subscribe</button>
+                        <button type="submit" className="btn-white" suppressHydrationWarning>Subscribe</button>
                     </form>
                 </div>
             </div>
             
             <div className="footer-bottom">
                 <p>&copy; 2026 Shreeji Tiles. All rights reserved.</p>
-                <p><Link href="https://www.tejaskpaisoftware.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>Designed by <Image src="/utility/tejaskp_logo_nobg.png" alt="Tejaskp AI Software Logo" width={100} height={24} style={{ height: '24px', width: 'auto' }} /> Tejaskp AI Software</Link></p>
+                <p><Link href="https://www.tejaskpaisoftware.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>Designed by <Image src="/utility/tejaskp_logo_nobg.png" alt="Tejaskp AI Software - Best Software Company in Vadodara" width={100} height={24} style={{ height: '24px', width: 'auto' }} /> Tejaskp AI Software</Link></p>
                 <a href="#" className="back-to-top" onClick={handleScrollTop}><i className="fa-solid fa-arrow-up"></i> Back to Top</a>
             </div>
         </div>

@@ -13,6 +13,7 @@ const categories = [
         desc: "Explore the Sinox glossy and carving collection",
         tags: ["Glossy Finish", "Carving", "Vitrified", "Porcelain"],
         img: "/utility/bathroom/BLUME MINT.png",
+        alt: "Premium glossy bathroom tiles collection in Vadodara",
         images: [
             "/utility/bathroom/BLUME MINT.png",
             "/utility/bathroom/PERSIAN WHITE - CR.png",
@@ -39,6 +40,7 @@ const categories = [
         desc: "Explore our beautiful Tonalita series",
         tags: ["New", "Tonalita", "Premium", "Designer"],
         img: "/utility/tonalita/Screenshot 2026-03-25 at 15.20.14.png",
+        alt: "Tonalita collection premium designer tiles Vadodara",
         images: [
             "/utility/tonalita/Screenshot 2026-03-25 at 15.20.14.png",
             "/utility/tonalita/Screenshot 2026-03-25 at 15.20.31.png",
@@ -68,6 +70,7 @@ const categories = [
         desc: "Specialized tiles for modern kitchens",
         tags: ["Kitchen", "Backsplash", "Durable", "Easy Clean"],
         img: "/utility/kitchen/Screenshot 2026-03-25 at 23.23.56.png",
+        alt: "Durable and easy-clean kitchen wall tiles Vadodara",
         images: [
             "/utility/kitchen/Screenshot 2026-03-25 at 23.23.56.png",
             "/utility/kitchen/Screenshot 2026-03-25 at 23.24.13.png",
@@ -89,6 +92,7 @@ const categories = [
         desc: "Corpo parking tiles designed for high durability and outdoor use",
         tags: ["Heavy Duty", "Parking", "Weather-Resistant", "Anti-Skid"],
         img: "/utility/heavy duty/Screenshot 2026-03-24 at 12.58.12.png",
+        alt: "Heavy duty parking tiles weather-resistant Vadodara",
         images: [
             "/utility/heavy duty/Screenshot 2026-03-24 at 12.58.12.png",
             "/utility/heavy duty/Screenshot 2026-03-24 at 12.58.31.png",
@@ -120,6 +124,7 @@ const categories = [
         desc: "Authentic wood-look tiles - Wooden strip 200x1200mm",
         tags: ["Wood Finish", "Planks", "Textured", "Natural Look"],
         img: "/utility/wood/Screenshot 2026-03-25 at 11.05.34.png",
+        alt: "Wooden strip tiles authentic wood look Vadodara",
         images: [
             "/utility/wood/Screenshot 2026-03-25 at 11.05.34.png",
             "/utility/wood/Screenshot 2026-03-25 at 11.05.46.png",
@@ -137,6 +142,7 @@ const categories = [
         desc: "Explore our premium flooring tiles collection",
         tags: ["Floor Tiles", "Premium", "Durable", "Elegant"],
         img: "/utility/floor/ANATOLIA BEIGE.png",
+        alt: "Elegant and durable floor tiles showroom Vadodara",
         images: [
             "/utility/floor/ANATOLIA BEIGE.png",
             "/utility/floor/ANATOLIA CREMA.png",
@@ -231,7 +237,7 @@ export default function Products() {
                                 {cat.img ? (
                                     <img 
                                         src={cat.img} 
-                                        alt={cat.title} 
+                                        alt={cat.alt || cat.title} 
                                         style={{ 
                                             width: '100%', 
                                             height: '100%', 
@@ -266,6 +272,7 @@ export default function Products() {
                                             onClick={(e) => { e.preventDefault(); setSelectedGallery({ title: cat.title, images: cat.images }); setCurrentPage(0); }}
                                             className="btn-outline btn-view-photos"
                                             style={{ width: '100%', justifyContent: 'center', cursor: 'pointer' }}
+                                            suppressHydrationWarning
                                         >
                                             <i className="fa-solid fa-images" style={{ marginRight: '6px' }}></i> View Photos
                                         </button>
@@ -277,6 +284,7 @@ export default function Products() {
                                                 rel="noreferrer"
                                                 className="btn-outline btn-view-pdf"
                                                 style={{ flex: 1, padding: '10px 5px', justifyContent: 'center', textAlign: 'center', fontSize: '14px' }}
+                                                suppressHydrationWarning
                                             >
                                                 <i className="fa-regular fa-eye" style={{ marginRight: '6px' }}></i> View PDF
                                             </a>
@@ -284,6 +292,7 @@ export default function Products() {
                                                 onClick={(e) => handleDownload(e, cat.pdfFile, cat.catalogName)}
                                                 className="btn-outline"
                                                 style={{ flex: 1, padding: '10px 5px', justifyContent: 'center', fontSize: '14px' }}
+                                                suppressHydrationWarning
                                             >
                                                 <i className="fa-solid fa-download" style={{ marginRight: '6px' }}></i> Download
                                             </button>
@@ -309,6 +318,7 @@ export default function Products() {
                                     onClick={(e) => { e.stopPropagation(); scrollPrev(); }}
                                     disabled={currentPage === 0}
                                     style={{ display: selectedGallery.images.length > 1 ? 'flex' : 'none' }}
+                                    suppressHydrationWarning
                                 >
                                     <i className="fa-solid fa-chevron-left"></i>
                                 </button>
@@ -337,6 +347,7 @@ export default function Products() {
                                     onClick={(e) => { e.stopPropagation(); scrollNext(); }}
                                     disabled={currentPage >= selectedGallery.images.length - 1}
                                     style={{ display: selectedGallery.images.length > 1 ? 'flex' : 'none' }}
+                                    suppressHydrationWarning
                                 >
                                     <i className="fa-solid fa-chevron-right"></i>
                                 </button>

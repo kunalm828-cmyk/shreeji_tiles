@@ -83,20 +83,6 @@ export default function Testimonials() {
                     </div>
                 </div>
 
-                <div className="testimonial-card reveal">
-                    <div className="quote-icon"><i className="fa-solid fa-quote-left"></i></div>
-                    <div className="stars">
-                        <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <p className="review-text">&quot;I recently visited SHREEJI Tiles located near Somatalav Road, Pratapnagar, Vadodara, and had a really good experience. They have a wide collection of modern tiles, designer sanitary ware, wash basins, and bathroom fittings at reasonable prices.&quot;</p>
-                    <div className="reviewer-info">
-                        <div>
-                            <h4>Sundaram Technologies</h4>
-                            <span className="location">Pratapnagar</span>
-                        </div>
-                        <span className="project-type">Bathroom Fittings</span>
-                    </div>
-                </div>
 
                 <div className="testimonial-card reveal">
                     <div className="quote-icon"><i className="fa-solid fa-quote-left"></i></div>

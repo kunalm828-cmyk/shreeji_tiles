@@ -17,23 +17,29 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL('https://shreejitiles.com'),
-  title: 'Shreeji Tiles | Premium Tiles, Sanitaryware & Bath Fittings in Vadodara',
-  description: 'Transform your space with Shreeji Tiles. Explore our wide range of premium tiles, modern wall series, luxury bath fittings, and sanitaryware in Vadodara, Gujarat. Over 25 years of crafting elegant spaces.',
-  keywords: ['tiles in Vadodara', 'sanitaryware', 'bath fittings', 'premium tiles', 'kitchen makeover', 'bathroom renovation', 'Grestek tiles', 'MarbleX', 'Shreeji Tiles', 'floor tiles'],
+  title: 'Shreeji Tiles | #1 Tiles Showroom in Vadodara | Premium Floor & Wall Tiles',
+  description: 'Looking for the best tiles showroom in Vadodara? Shreeji Tiles offers premium ceramic tiles, floor tiles, luxury bath fittings, and sanitaryware. 25+ years of excellence in Vadodara, Gujarat. Visit us for kitchen & bathroom makeovers.',
+  keywords: [
+    'tiles vadodara', 
+    'tiles showroom vadodara', 
+    'bathroom tiles vadodara', 
+    'floor tiles vadodara', 
+    'ceramic tiles vadodara', 
+    'kitchen tiles vadodara', 
+    'sanitaryware vadodara',
+    'bath fittings vadodara',
+    'best tiles shop in vadodara',
+    'Shreeji Tiles Vadodara'
+  ],
   authors: [{ name: 'Shreeji Tiles' }],
   creator: 'Shreeji Tiles',
   publisher: 'Shreeji Tiles',
   alternates: {
     canonical: '/',
   },
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
   openGraph: {
-    title: 'Shreeji Tiles | Premium Tiles & Bath Fittings',
-    description: 'Transform your space with Shreeji Tiles. Over 25 years of crafting elegant spaces in Vadodara.',
+    title: 'Shreeji Tiles | Best Tiles Showroom in Vadodara',
+    description: 'Explore a wide range of premium tiles and bath fittings at Shreeji Tiles, Vadodara. Over 25 years of quality and trust.',
     url: 'https://shreejitiles.com',
     siteName: 'Shreeji Tiles',
     images: [
@@ -41,7 +47,7 @@ export const metadata = {
         url: '/utility/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Shreeji Tiles Logo',
+        alt: 'Shreeji Tiles Vadodara Showroom',
       },
     ],
     locale: 'en_IN',
@@ -49,8 +55,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shreeji Tiles | Premium Tiles in Vadodara',
-    description: 'Transform your space with Shreeji Tiles. We offer premium tiles and sanitaryware.',
+    title: 'Shreeji Tiles | Premium Tiles & Sanitaryware in Vadodara',
+    description: 'Transform your home with premium tiles from the top-rated showroom in Vadodara.',
     images: ['/utility/logo.png'],
   },
   robots: {
@@ -64,6 +70,9 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'igx1cSR1yv1C7Mm6wyMKCOj8wRKeSyrkruWZ8ETB9EU',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -72,11 +81,12 @@ export default function RootLayout({ children }) {
     '@graph': [
       {
         '@type': 'HomeGoodsStore',
+        '@id': 'https://shreejitiles.com/#organization',
         name: 'Shreeji Tiles',
         image: 'https://shreejitiles.com/utility/logo.png',
-        '@id': 'https://shreejitiles.com',
         url: 'https://shreejitiles.com',
         telephone: '+919898713167',
+        priceRange: '₹₹',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'B/H, Samruddhi Complex, Shed No. 10 Anand Estate, Dabhoi, Pratap Nagar Rd, opp. Yamuna Mill Road',
@@ -84,6 +94,11 @@ export default function RootLayout({ children }) {
           addressRegion: 'GJ',
           postalCode: '390004',
           addressCountry: 'IN'
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: '22.2823199',
+          longitude: '73.2174973'
         },
         openingHoursSpecification: [
           {
@@ -100,45 +115,35 @@ export default function RootLayout({ children }) {
           }
         ],
         sameAs: [
-          'https://www.facebook.com/shreeji.tiles.3?mibextid=wwXIfr&rdid=BrIWvDZIbuv9mV0D',
-          'https://www.instagram.com/shreeji_tiles?igsh=c296cnVlamltYTBl'
+          'https://www.facebook.com/shreeji.tiles.3',
+          'https://www.instagram.com/shreeji_tiles'
         ]
       },
       {
-        '@type': 'ItemList',
-        itemListElement: [
+        '@type': 'WebSite',
+        '@id': 'https://shreejitiles.com/#website',
+        url: 'https://shreejitiles.com',
+        name: 'Shreeji Tiles',
+        description: 'Premium Tiles and Sanitaryware Showroom in Vadodara',
+        publisher: { '@id': 'https://shreejitiles.com/#organization' }
+      },
+      {
+        '@type': 'FAQPage',
+        'mainEntity': [
           {
-            '@type': 'ListItem',
-            position: 1,
-            item: {
-              '@type': 'Product',
-              name: 'Premium Ceramic Tiles Vadodara',
-              image: 'https://shreejitiles.com/utility/logo.png',
-              description: 'High quality ceramic and porcelain floor tiles available in Vadodara showroom.',
-              brand: { '@type': 'Brand', name: 'Shreeji Tiles' },
-              offers: {
-                '@type': 'Offer',
-                priceCurrency: 'INR',
-                availability: 'https://schema.org/InStock',
-                areaServed: 'Vadodara'
-              }
+            '@type': 'Question',
+            'name': 'Which is the best tiles showroom in Vadodara?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Shreeji Tiles is one of the top-rated tiles showrooms in Vadodara, offering a wide range of premium floor tiles, wall tiles, and sanitaryware for over 25 years.'
             }
           },
           {
-            '@type': 'ListItem',
-            position: 2,
-            item: {
-              '@type': 'Product',
-              name: 'Luxury Bath Fittings & Sanitaryware Vadodara',
-              image: 'https://shreejitiles.com/utility/logo.png',
-              description: 'Top-rated sanitaryware and bath fitting supplier in Gujarat.',
-              brand: { '@type': 'Brand', name: 'Shreeji Tiles' },
-              offers: {
-                '@type': 'Offer',
-                priceCurrency: 'INR',
-                availability: 'https://schema.org/InStock',
-                areaServed: 'Vadodara'
-              }
+            '@type': 'Question',
+            'name': 'Do you provide bathroom and kitchen tiles in Vadodara?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Yes, we specialize in high-quality bathroom and kitchen tiles, including ceramic, porcelain, and vitrified options at our Vadodara showroom.'
             }
           }
         ]
@@ -147,7 +152,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -156,7 +161,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${playfair.variable} ${poppins.variable}`}>
+      <body className={`${playfair.variable} ${poppins.variable}`} suppressHydrationWarning>
         {children}
       </body>
     </html>

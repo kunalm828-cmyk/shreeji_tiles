@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 export default function Hero() {
     const slides = [
-        "/utility/hero/3d-rendering-modern-design-marble-tile-toilet-bathroom-wardrobe-with-walk-closet.jpg",
-        "/utility/hero/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge.jpg",
-        "/utility/hero/beautiful-shot-modern-house-bathroom-with-technology-art.jpg",
-        "/utility/hero/marble-kitchen-gas-stove-contemporary-interior.jpg",
-        "/utility/hero/neon-robot-vacuum-cleaner.jpg",
-        "/utility/hero/photorealistic-stone-wall-surface-used-interior-design-2.jpg",
-        "/utility/hero/photorealistic-stone-wall-surface-used-interior-design.jpg"
+        { url: "/utility/hero/3d-rendering-modern-design-marble-tile-toilet-bathroom-wardrobe-with-walk-closet.jpg", alt: "Modern bathroom with premium marble wall tiles in Vadodara" },
+        { url: "/utility/hero/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge.jpg", alt: "Luxury hotel reception with high-end floor tiles Vadodara" },
+        { url: "/utility/hero/beautiful-shot-modern-house-bathroom-with-technology-art.jpg", alt: "Designer bathroom tiles and modern sanitaryware collection" },
+        { url: "/utility/hero/marble-kitchen-gas-stove-contemporary-interior.jpg", alt: "Premium kitchen wall tiles and marble countertops Vadodara" },
+        { url: "/utility/hero/neon-robot-vacuum-cleaner.jpg", alt: "Glossy vitrified floor tiles for modern living spaces" },
+        { url: "/utility/hero/photorealistic-stone-wall-surface-used-interior-design-2.jpg", alt: "Natural stone finish wall tiles for interior decor" },
+        { url: "/utility/hero/photorealistic-stone-wall-surface-used-interior-design.jpg", alt: "Textured ceramic wall tiles for modern homes in Vadodara" }
     ];
     const [currentSlide, setCurrentSlide] = useState(0);
     const intervalRef = useRef(null);
@@ -71,11 +71,11 @@ export default function Hero() {
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
         >
-            {slides.map((url, i) => (
+            {slides.map((slide, i) => (
                 <div key={i} className={`hero-slide ${i === currentSlide ? 'active' : ''}`} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
                     <Image 
-                        src={url} 
-                        alt={`Hero Slide ${i + 1}`} 
+                        src={slide.url} 
+                        alt={slide.alt} 
                         fill 
                         priority={i === 0} 
                         quality={85}
@@ -87,9 +87,9 @@ export default function Hero() {
 
             <div className="hero-overlay"></div>
             <div className="container hero-content">
-                <h1>Premium Tiles Showroom<br />in Vadodara</h1>
+                <h1>Best Tiles Showroom in Vadodara<br />Premium Floor & Wall Tiles</h1>
                 <p className="hero-subtitle">Discover a World of Ceramic Tiles, Floor Tiles, Sanitaryware & Bath Fittings</p>
-                <p className="hero-desc">The top-rated tiles dealer in Vadodara for home and kitchen makeovers.</p>
+                <p className="hero-desc">The #1 rated tiles dealer in Vadodara for premium home and kitchen makeovers.</p>
                 <div className="hero-ctas">
                     <a href="tel:+919898713167" className="btn btn-primary">Call Now</a>
                     <a href="#contact" className="btn btn-outline btn-outline-white">Visit Showroom</a>
@@ -105,8 +105,8 @@ export default function Hero() {
                 ))}
             </div>
             <div className="slider-arrows">
-                <button className="arrow left-arrow" onClick={() => { prevSlide(); resetSlider(); }}><i className="fa-solid fa-chevron-left"></i></button>
-                <button className="arrow right-arrow" onClick={() => { nextSlide(); resetSlider(); }}><i className="fa-solid fa-chevron-right"></i></button>
+                <button className="arrow left-arrow" onClick={() => { prevSlide(); resetSlider(); }} suppressHydrationWarning><i className="fa-solid fa-chevron-left"></i></button>
+                <button className="arrow right-arrow" onClick={() => { nextSlide(); resetSlider(); }} suppressHydrationWarning><i className="fa-solid fa-chevron-right"></i></button>
             </div>
         </section>
     );
