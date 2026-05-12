@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://shreejitiles.com';
+  const baseUrl = 'https://shreejitile.com';
   
   return [
     {

@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: ['/api/', '/private/'],
     },
-    sitemap: 'https://shreejitiles.com/sitemap.xml',
+    sitemap: 'https://shreejitile.com/sitemap.xml',
   }
 }

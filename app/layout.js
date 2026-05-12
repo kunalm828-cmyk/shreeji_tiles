@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://shreejitiles.com'),
+  metadataBase: new URL('https://shreejitile.com'),
   title: 'Shreeji Tiles | #1 Tiles Showroom in Vadodara | Premium Floor & Wall Tiles',
   description: 'Looking for the best tiles showroom in Vadodara? Shreeji Tiles offers premium ceramic tiles, floor tiles, luxury bath fittings, and sanitaryware. 25+ years of excellence in Vadodara, Gujarat. Visit us for kitchen & bathroom makeovers.',
   keywords: [
@@ -40,7 +40,7 @@ export const metadata = {
   openGraph: {
     title: 'Shreeji Tiles | Best Tiles Showroom in Vadodara',
     description: 'Explore a wide range of premium tiles and bath fittings at Shreeji Tiles, Vadodara. Over 25 years of quality and trust.',
-    url: 'https://shreejitiles.com',
+    url: 'https://shreejitile.com',
     siteName: 'Shreeji Tiles',
     images: [
       {
@@ -81,10 +81,10 @@ export default function RootLayout({ children }) {
     '@graph': [
       {
         '@type': 'HomeGoodsStore',
-        '@id': 'https://shreejitiles.com/#organization',
+        '@id': 'https://shreejitile.com/#organization',
         name: 'Shreeji Tiles',
-        image: 'https://shreejitiles.com/utility/logo.png',
-        url: 'https://shreejitiles.com',
+        image: 'https://shreejitile.com/utility/logo.png',
+        url: 'https://shreejitile.com',
         telephone: '+919898713167',
         priceRange: '₹₹',
         address: {
@@ -121,11 +121,11 @@ export default function RootLayout({ children }) {
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://shreejitiles.com/#website',
-        url: 'https://shreejitiles.com',
+        '@id': 'https://shreejitile.com/#website',
+        url: 'https://shreejitile.com',
         name: 'Shreeji Tiles',
         description: 'Premium Tiles and Sanitaryware Showroom in Vadodara',
-        publisher: { '@id': 'https://shreejitiles.com/#organization' }
+        publisher: { '@id': 'https://shreejitile.com/#organization' }
       },
       {
         '@type': 'FAQPage',
