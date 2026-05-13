@@ -29,7 +29,11 @@ export const metadata = {
     'best tile shop in vadodara', 'kajaria tiles vadodara', 'somany tiles vadodara',
     'tiles showroom near pratap nagar vadodara', 'tiles shop near dabhoi road vadodara',
     'top tile dealers in vadodara', 'wall tiles supplier vadodara', 'luxury tiles near me',
-    'anti skid bathroom tiles', 'kitchen backsplash tiles', 'heavy duty parking tiles'
+    'anti skid bathroom tiles', 'kitchen backsplash tiles', 'heavy duty parking tiles',
+    'premium ceramic showroom vadodara', 'flooring showroom in vadodara gujarat',
+    'bathroom tiles shop near me', 'modular kitchen tiles vadodara', '800x800 vitrified tiles',
+    'large format tiles', 'exclusive tiles showroom', 'high end bathroom tiles',
+    'modern home tiles', 'affordable vitrified tiles in vadodara'
   ],
   authors: [{ name: 'Shreeji Tiles' }],
   creator: 'Shreeji Tiles',

@@ -6,7 +6,12 @@ import Products from '../../components/Products';
 export const metadata = {
   title: 'Premium Bathroom Tiles in Vadodara | Anti-Skid & Luxury Designs',
   description: 'Explore the best collection of bathroom tiles in Vadodara at Shreeji Tiles. From anti-skid floor tiles to luxury wall designs, find everything for your dream bathroom. Visit our showroom near Pratap Nagar.',
-  keywords: ['bathroom tiles vadodara', 'anti skid bathroom tiles', 'luxury bathroom tiles', 'bathroom floor tiles vadodara', 'modern bathroom design vadodara'],
+  keywords: [
+    'bathroom tiles vadodara', 'anti skid bathroom tiles', 'luxury bathroom tiles', 
+    'bathroom floor tiles vadodara', 'modern bathroom design vadodara', 
+    'digital bathroom tiles', 'matte finish bathroom tiles', 'washroom tiles showroom vadodara',
+    'premium bathroom tiles collection', 'waterproof bathroom tiles'
+  ],
 };
 
 const BathroomTilesPage = () => {

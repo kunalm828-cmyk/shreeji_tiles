@@ -6,7 +6,11 @@ import Products from '../../components/Products';
 export const metadata = {
   title: 'Heavy Duty Parking Tiles in Vadodara | Outdoor & Industrial Tiles',
   description: 'Buy heavy-duty parking tiles in Vadodara. Shreeji Tiles offers high-strength outdoor tiles, anti-skid parking solutions, and weather-resistant industrial tiles. Visit our showroom today.',
-  keywords: ['parking tiles vadodara', 'heavy duty parking tiles', 'outdoor tiles vadodara', 'driveway parking tiles', 'industrial floor tiles'],
+  keywords: [
+    'parking tiles vadodara', 'heavy duty parking tiles', 'outdoor tiles vadodara', 
+    'driveway parking tiles', 'industrial floor tiles', 'commercial parking tiles',
+    'high strength parking tiles', 'parking floor tiles', 'industrial parking tiles'
+  ],
 };
 
 const ParkingTilesPage = () => {

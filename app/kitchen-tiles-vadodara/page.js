@@ -6,7 +6,12 @@ import Products from '../../components/Products';
 export const metadata = {
   title: 'Modern Kitchen Wall Tiles in Vadodara | Backsplash & Designer Series',
   description: 'Explore modern kitchen wall tiles and backsplash designs in Vadodara. Shreeji Tiles offers stain-resistant, glossy, and digital kitchen tiles at best prices. Visit us near Pratap Nagar.',
-  keywords: ['kitchen tiles vadodara', 'kitchen wall tiles', 'kitchen backsplash tiles vadodara', 'stain resistant kitchen tiles', 'designer kitchen tiles'],
+  keywords: [
+    'kitchen tiles vadodara', 'kitchen wall tiles', 'kitchen backsplash tiles vadodara', 
+    'stain resistant kitchen tiles', 'designer kitchen tiles', 'glossy kitchen tiles',
+    'kitchen ceramic tiles', 'modular kitchen tiles vadodara', 'premium kitchen tiles',
+    'designer kitchen wall tiles'
+  ],
 };
 
 const KitchenTilesPage = () => {

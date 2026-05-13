@@ -6,7 +6,12 @@ import Products from '../../components/Products';
 export const metadata = {
   title: 'Premium Floor Tiles in Vadodara | Vitrified & Marble Finish Designs',
   description: 'Looking for the best floor tiles in Vadodara? Shreeji Tiles offers high-quality vitrified floor tiles, marble finish designs, and durable flooring solutions for homes and offices. Visit our showroom today.',
-  keywords: ['floor tiles vadodara', 'vitrified floor tiles', 'marble finish tiles vadodara', 'best flooring shop vadodara', 'premium vitrified tiles'],
+  keywords: [
+    'floor tiles vadodara', 'vitrified floor tiles', 'marble finish tiles vadodara', 
+    'best flooring shop vadodara', 'premium vitrified tiles', 'marble finish floor tiles',
+    'living room floor tiles', 'double charge vitrified tiles', '800x800 vitrified tiles',
+    'scratch resistant floor tiles', 'commercial floor tiles'
+  ],
 };
 
 const FloorTilesPage = () => {
