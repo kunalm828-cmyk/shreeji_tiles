@@ -10,7 +10,9 @@ export const metadata = {
     'parking tiles vadodara', 'heavy duty parking tiles', 'outdoor tiles vadodara', 
     'driveway parking tiles', 'industrial floor tiles', 'commercial parking tiles',
     'high strength parking tiles', 'parking floor tiles', 'industrial parking tiles',
-    'bungalow parking tiles', 'elevation tiles vadodara'
+    'bungalow parking tiles', 'elevation tiles vadodara',
+    'parking paving tiles', 'terrace outdoor tiles', 'UV resistant outdoor tiles',
+    'premium terrace flooring', 'best anti skid outdoor tiles', 'heavy duty outdoor flooring'
   ],
 };
 

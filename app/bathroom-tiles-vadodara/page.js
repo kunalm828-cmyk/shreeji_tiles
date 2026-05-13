@@ -11,7 +11,11 @@ export const metadata = {
     'bathroom floor tiles vadodara', 'modern bathroom design vadodara', 
     'digital bathroom tiles', 'matte finish bathroom tiles', 'washroom tiles showroom vadodara',
     'premium bathroom tiles collection', 'waterproof bathroom tiles', 'high gloss bathroom tiles',
-    'luxury bathroom fittings vadodara', 'washroom tiles vadodara', 'hotel bathroom tiles'
+    'luxury bathroom fittings vadodara', 'washroom tiles vadodara', 'hotel bathroom tiles',
+    'spa bathroom tiles', 'hotel luxury bathroom tiles', 'germ resistant tiles', 
+    'easy clean bathroom tiles', 'modern washroom wall tiles', 'designer wash basin showroom',
+    'modern bathroom accessories vadodara', 'premium faucet showroom', 'luxury shower fittings vadodara',
+    'premium bathware showroom', 'luxury sanitaryware collection'
   ],
 };
 

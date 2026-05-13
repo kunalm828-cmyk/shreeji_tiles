@@ -11,7 +11,10 @@ export const metadata = {
     'best flooring shop vadodara', 'premium vitrified tiles', 'marble finish floor tiles',
     'living room floor tiles', 'double charge vitrified tiles', '800x800 vitrified tiles',
     'scratch resistant floor tiles', 'commercial floor tiles', '600x600 floor tiles',
-    'wooden finish tiles', 'wood plank tiles', 'porcelain wood tiles', 'villa flooring tiles'
+    'wooden finish tiles', 'wood plank tiles', 'porcelain wood tiles', 'villa flooring tiles',
+    'granite finish vitrified tiles', 'concrete finish tiles', 'large slab tiles', 
+    'slim tiles collection', 'high traffic floor tiles', 'seamless flooring tiles',
+    'modern home flooring ideas', 'minimalist tile designs', 'architect choice tiles'
   ],
 };
 
