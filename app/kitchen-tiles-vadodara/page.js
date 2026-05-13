@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Products from '../components/Products';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Products from '../../components/Products';
 
 export const metadata = {
   title: 'Modern Kitchen Wall Tiles in Vadodara | Backsplash & Designer Series',

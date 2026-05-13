@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Products from '../components/Products';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Products from '../../components/Products';
 
 export const metadata = {
   title: 'Heavy Duty Parking Tiles in Vadodara | Outdoor & Industrial Tiles',
