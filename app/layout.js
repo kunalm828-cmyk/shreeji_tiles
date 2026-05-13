@@ -17,19 +17,19 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL('https://shreejitile.com'),
-  title: 'Shreeji Tiles | #1 Tiles Showroom in Vadodara | Premium Floor & Wall Tiles',
-  description: 'Looking for the best tiles showroom in Vadodara? Shreeji Tiles offers premium ceramic tiles, floor tiles, luxury bath fittings, and sanitaryware. 25+ years of excellence in Vadodara, Gujarat. Visit us for kitchen & bathroom makeovers.',
+  title: '#1 Tiles Showroom in Vadodara | Premium Floor & Wall Tiles | Shreeji Tiles',
+  description: 'Looking for the best tiles showroom in Vadodara? Shreeji Tiles offers premium vitrified floor tiles, designer wall tiles, and luxury sanitaryware. #1 choice for bathroom and kitchen tiles in Vadodara since 1998. Visit us near Pratap Nagar for Somany, Kajaria, and exclusive Sinox collections.',
   keywords: [
-    'tiles vadodara', 
-    'tiles showroom vadodara', 
-    'bathroom tiles vadodara', 
-    'floor tiles vadodara', 
-    'ceramic tiles vadodara', 
-    'kitchen tiles vadodara', 
-    'sanitaryware vadodara',
-    'bath fittings vadodara',
-    'best tiles shop in vadodara',
-    'Shreeji Tiles Vadodara'
+    'tiles vadodara', 'best tiles showroom in vadodara', 'tiles showroom vadodara', 
+    'ceramic tiles vadodara', 'floor tiles vadodara', 'bathroom tiles vadodara', 
+    'kitchen tiles vadodara', 'wall tiles vadodara', 'premium tiles vadodara', 
+    'vitrified tiles vadodara', 'parking tiles vadodara', 'sanitaryware vadodara', 
+    'bath fittings vadodara', 'luxury tiles showroom vadodara', 'designer tiles vadodara', 
+    'modern tiles vadodara', 'home tiles showroom vadodara', 'tile dealer vadodara', 
+    'best tile shop in vadodara', 'kajaria tiles vadodara', 'somany tiles vadodara',
+    'tiles showroom near pratap nagar vadodara', 'tiles shop near dabhoi road vadodara',
+    'top tile dealers in vadodara', 'wall tiles supplier vadodara', 'luxury tiles near me',
+    'anti skid bathroom tiles', 'kitchen backsplash tiles', 'heavy duty parking tiles'
   ],
   authors: [{ name: 'Shreeji Tiles' }],
   creator: 'Shreeji Tiles',
@@ -39,7 +39,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Shreeji Tiles | Best Tiles Showroom in Vadodara',
-    description: 'Explore a wide range of premium tiles and bath fittings at Shreeji Tiles, Vadodara. Over 25 years of quality and trust.',
+    description: 'Explore the largest collection of premium tiles and sanitaryware in Vadodara. Quality you can trust for over 25 years.',
     url: 'https://shreejitile.com',
     siteName: 'Shreeji Tiles',
     images: [
@@ -47,7 +47,7 @@ export const metadata = {
         url: '/utility/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Shreeji Tiles Vadodara Showroom',
+        alt: 'Shreeji Tiles Vadodara - Best Tiles Showroom',
       },
     ],
     locale: 'en_IN',
@@ -55,7 +55,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shreeji Tiles | Premium Tiles & Sanitaryware in Vadodara',
+    title: 'Shreeji Tiles | Premium Tiles Showroom in Vadodara',
     description: 'Transform your home with premium tiles from the top-rated showroom in Vadodara.',
     images: ['/utility/logo.png'],
   },

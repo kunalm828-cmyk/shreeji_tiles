@@ -58,15 +58,24 @@ export default function Footer() {
                 </div>
                 
                 <div className="footer-col">
+                    <h4>Collections</h4>
+                    <ul className="footer-links">
+                        <li><Link href="/bathroom-tiles-vadodara">Bathroom Tiles</Link></li>
+                        <li><Link href="/floor-tiles-vadodara">Floor Tiles</Link></li>
+                        <li><Link href="/kitchen-tiles-vadodara">Kitchen Tiles</Link></li>
+                        <li><Link href="/parking-tiles-vadodara">Parking Tiles</Link></li>
+                        <li><Link href="/#products">All Catalogs</Link></li>
+                    </ul>
+                </div>
+                
+                <div className="footer-col">
                     <h4>Quick Links</h4>
                     <ul className="footer-links">
-                        <li><Link href="#home">Home</Link></li>
-                        <li><Link href="#about">About Us</Link></li>
-                        <li><Link href="#products">Products</Link></li>
-                        <li><Link href="#gallery">Gallery</Link></li>
-                        <li><Link href="#services">Services</Link></li>
-                        <li><Link href="#contact">Get Quote</Link></li>
-                        <li><Link href="#contact">Contact</Link></li>
+                        <li><Link href="/#home">Home</Link></li>
+                        <li><Link href="/#about">About Us</Link></li>
+                        <li><Link href="/#gallery">Gallery</Link></li>
+                        <li><Link href="/#services">Services</Link></li>
+                        <li><Link href="/#contact">Contact</Link></li>
                     </ul>
                 </div>
                 

@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Products from '../components/Products';
+import SEOContent from '../components/SEOContent';
 import Gallery from '../components/Gallery';
 import Services from '../components/Services';
 import Stats from '../components/Stats';
@@ -57,6 +58,7 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
+      <SEOContent />
       <Marvelous />
       <Services />
       <Stats />

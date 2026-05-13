@@ -50,13 +50,13 @@ export default function Navbar() {
             </button>
             
             <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                <Link href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Home</Link>
-                <Link href="#about" className={activeSection === 'about' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>About Us</Link>
-                <Link href="#products" className={activeSection === 'products' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Products</Link>
-                <Link href="#gallery" className={activeSection === 'gallery' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Gallery</Link>
-                <Link href="#services" className={activeSection === 'services' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Services</Link>
-                <Link href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Get Quote</Link>
-                <Link href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                <Link href="/#home" className={activeSection === 'home' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Home</Link>
+                <Link href="/#about" className={activeSection === 'about' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>About Us</Link>
+                <Link href="/bathroom-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Bathroom</Link>
+                <Link href="/floor-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Flooring</Link>
+                <Link href="/kitchen-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Kitchen</Link>
+                <Link href="/parking-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Parking</Link>
+                <Link href="/#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             </nav>
             <div className="nav-contact">
                 <i className="fa-solid fa-phone"></i> <a href="tel:+919898713167" style={{ color: 'inherit', textDecoration: 'none' }}>+91 98987 13167</a>
