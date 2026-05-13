@@ -10,7 +10,8 @@ export const metadata = {
     'bathroom tiles vadodara', 'anti skid bathroom tiles', 'luxury bathroom tiles', 
     'bathroom floor tiles vadodara', 'modern bathroom design vadodara', 
     'digital bathroom tiles', 'matte finish bathroom tiles', 'washroom tiles showroom vadodara',
-    'premium bathroom tiles collection', 'waterproof bathroom tiles'
+    'premium bathroom tiles collection', 'waterproof bathroom tiles', 'high gloss bathroom tiles',
+    'luxury bathroom fittings vadodara', 'washroom tiles vadodara', 'hotel bathroom tiles'
   ],
 };
 

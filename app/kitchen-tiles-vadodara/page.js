@@ -10,7 +10,7 @@ export const metadata = {
     'kitchen tiles vadodara', 'kitchen wall tiles', 'kitchen backsplash tiles vadodara', 
     'stain resistant kitchen tiles', 'designer kitchen tiles', 'glossy kitchen tiles',
     'kitchen ceramic tiles', 'modular kitchen tiles vadodara', 'premium kitchen tiles',
-    'designer kitchen wall tiles'
+    'designer kitchen wall tiles', 'modern kitchen tiles vadodara'
   ],
 };
 

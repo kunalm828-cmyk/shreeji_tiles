@@ -2,9 +2,9 @@ import React from 'react';
 
 const LocalAreaTrust = () => {
     const areas = [
-        "Akota", "Alkapuri", "Karelibaug", "Gotri", "Harni", 
-        "Fatehgunj", "Nizampura", "Vasna", "Sayajigunj", 
-        "Manjalpur", "Waghodia", "Pratap Nagar", "Dabhoi Road"
+        "Pratap Nagar", "Dabhoi Road", "Akota", "Alkapuri", 
+        "Manjalpur", "Gotri", "Karelibaug", "Waghodia", 
+        "Nizampura", "Harni", "Vasna Road", "Fatehgunj", "Sayajigunj"
     ];
 
     return (
@@ -19,7 +19,7 @@ const LocalAreaTrust = () => {
                     {areas.map((area, idx) => (
                         <div key={idx} className="area-chip">
                             <i className="fa-solid fa-location-dot"></i>
-                            <span>Best Tiles in {area}</span>
+                            <span>Tiles Showroom {area}</span>
                         </div>
                     ))}
                 </div>

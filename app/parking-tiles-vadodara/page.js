@@ -9,7 +9,8 @@ export const metadata = {
   keywords: [
     'parking tiles vadodara', 'heavy duty parking tiles', 'outdoor tiles vadodara', 
     'driveway parking tiles', 'industrial floor tiles', 'commercial parking tiles',
-    'high strength parking tiles', 'parking floor tiles', 'industrial parking tiles'
+    'high strength parking tiles', 'parking floor tiles', 'industrial parking tiles',
+    'bungalow parking tiles', 'elevation tiles vadodara'
   ],
 };
 
