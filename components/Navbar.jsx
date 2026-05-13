@@ -55,7 +55,9 @@ export default function Navbar() {
                 <Link href="/bathroom-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Bathroom</Link>
                 <Link href="/floor-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Flooring</Link>
                 <Link href="/kitchen-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Kitchen</Link>
-                <Link href="/parking-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Parking</Link>
+                <Link href="/luxury-tiles-vadodara" onClick={() => setIsMenuOpen(false)}>Luxury</Link>
+                <Link href="/sanitaryware-vadodara" onClick={() => setIsMenuOpen(false)}>Sanitaryware</Link>
+                <Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link>
                 <Link href="/#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             </nav>
             <div className="nav-contact">

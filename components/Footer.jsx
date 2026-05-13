@@ -63,8 +63,9 @@ export default function Footer() {
                         <li><Link href="/bathroom-tiles-vadodara">Bathroom Tiles</Link></li>
                         <li><Link href="/floor-tiles-vadodara">Floor Tiles</Link></li>
                         <li><Link href="/kitchen-tiles-vadodara">Kitchen Tiles</Link></li>
-                        <li><Link href="/parking-tiles-vadodara">Parking Tiles</Link></li>
-                        <li><Link href="/#products">All Catalogs</Link></li>
+                        <li><Link href="/luxury-tiles-vadodara">Luxury Collection</Link></li>
+                        <li><Link href="/sanitaryware-vadodara">Sanitaryware</Link></li>
+                        <li><Link href="/blog">Expert Blog</Link></li>
                     </ul>
                 </div>
                 
