@@ -33,7 +33,11 @@ export const metadata = {
     'premium ceramic showroom vadodara', 'flooring showroom in vadodara gujarat',
     'bathroom tiles shop near me', 'modular kitchen tiles vadodara', '800x800 vitrified tiles',
     'large format tiles', 'exclusive tiles showroom', 'high end bathroom tiles',
-    'modern home tiles', 'affordable vitrified tiles in vadodara'
+    'modern home tiles', 'affordable vitrified tiles in vadodara',
+    'best tiles showroom in pratap nagar', 'tiles shop near dabhoi road',
+    'luxury tiles in akota', 'bathroom tiles showroom manjalpur',
+    'floor tiles dealer gotri', 'wall tiles showroom karelibaug',
+    'premium ceramic tiles alkapuri', 'tiles near me', 'tile showroom near me'
   ],
   authors: [{ name: 'Shreeji Tiles' }],
   creator: 'Shreeji Tiles',
@@ -93,10 +97,11 @@ export default function RootLayout({ children }) {
         priceRange: '₹₹',
         currenciesAccepted: 'INR',
         paymentAccepted: 'Cash, Credit Card, UPI',
-        areaServed: {
-          '@type': 'City',
-          name: 'Vadodara'
-        },
+        areaServed: [
+          'Vadodara', 'Pratap Nagar', 'Dabhoi Road', 'Waghodia', 'Manjalpur', 
+          'Akota', 'Alkapuri', 'Karelibaug', 'Gotri', 'Harni', 'Fatehgunj', 
+          'Nizampura', 'Vasna', 'Sayajigunj', 'Gujarat'
+        ],
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'B/H, Samruddhi Complex, Shed No. 10 Anand Estate, Dabhoi, Pratap Nagar Rd, opp. Yamuna Mill Road',

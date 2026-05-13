@@ -37,19 +37,23 @@ const ParkingTilesPage = () => {
 
             <section className="category-seo-text section-padding bg-white">
                 <div className="container">
-                    <h2>Ultimate Durability for Your Driveways</h2>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginTop: '30px' }}>
+                    <h2>Outdoor Spaces: Best tiles for parking area?</h2>
+                    <p style={{ marginBottom: '40px', color: '#555' }}>
+                        Choosing the right **parking floor tiles** is crucial for durability. Shreeji Tiles is the **best tiles showroom near me** for **bungalow parking tiles** and **industrial parking tiles** in Gujarat.
+                    </p>
+                    
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
                         <div className="seo-text-block">
-                            <h3>High Breaking Strength</h3>
-                            <p>Our **heavy-duty outdoor tiles** have a high thickness and breaking strength, ensuring they don't crack under the weight of heavy SUVs.</p>
+                            <h3>High Strength & Performance</h3>
+                            <p>Our **high strength parking tiles** and **commercial parking tiles** are built for the toughest conditions. They are the **best tiles for parking area** if you have heavy vehicles.</p>
                         </div>
                         <div className="seo-text-block">
-                            <h3>Anti-Skid Texture</h3>
-                            <p>Wet parking lots can be slippery. Our **textured parking tiles** provide maximum grip for tires and safety for pedestrians.</p>
+                            <h3>Anti-Skid Outdoor Tiles</h3>
+                            <p>For safety during Gujarat monsoons, our **anti-skid parking tiles** provide a rough texture and excellent grip. Ideal for **driveway parking tiles** and garden paths.</p>
                         </div>
                         <div className="seo-text-block">
-                            <h3>Weather Proof</h3>
-                            <p>These tiles are **UV resistant and frost proof**, ensuring the color and texture don't fade under the harsh Gujarat sun.</p>
+                            <h3>Weather Resistant Beauty</h3>
+                            <p>Our **outdoor tiles in Vadodara** are designed to resist UV rays and moisture, making them the perfect **balcony outdoor tiles** and elevation solutions.</p>
                         </div>
                     </div>
                 </div>

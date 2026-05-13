@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Products from '../components/Products';
 import SEOContent from '../components/SEOContent';
+import LocalAreaTrust from '../components/LocalAreaTrust';
 import Gallery from '../components/Gallery';
 import Services from '../components/Services';
 import Stats from '../components/Stats';
@@ -59,6 +60,7 @@ export default function Home() {
       <About />
       <Products />
       <SEOContent />
+      <LocalAreaTrust />
       <Marvelous />
       <Services />
       <Stats />

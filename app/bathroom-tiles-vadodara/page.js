@@ -39,19 +39,24 @@ const BathroomTilesPage = () => {
 
             <section className="category-seo-text section-padding bg-light">
                 <div className="container">
-                    <h2>Why Buy Bathroom Tiles from Shreeji Tiles Vadodara?</h2>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginTop: '30px' }}>
+                    <h2>Expert Guide: Which tiles are best for your bathroom?</h2>
+                    <p style={{ marginBottom: '40px', color: '#555' }}>
+                        If you are wondering **where can I buy luxury tiles in Vadodara**, Shreeji Tiles near Pratap Nagar is your answer. 
+                        We help you solve common questions like "which tiles are best for home?" with our expert consultation.
+                    </p>
+                    
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
                         <div className="seo-text-block">
-                            <h3>Anti-Skid Safety</h3>
-                            <p>Safety is priority in wet areas. Our **anti-skid bathroom tiles** provide superior grip and are perfect for families with kids and elderly members in Vadodara homes.</p>
+                            <h3>Modern House Tiles Showroom</h3>
+                            <p>Our **luxury bathroom flooring** options include **matte finish tiles** and **digital wall series** that are perfect for **villa renovations** and modern bungalows in Alkapuri and Akota.</p>
                         </div>
                         <div className="seo-text-block">
-                            <h3>Low Maintenance</h3>
-                            <p>Our **premium ceramic bathroom tiles** are stain-resistant and easy to clean, keeping your bathroom looking fresh for years with minimal effort.</p>
+                            <h3>Best Sanitaryware Showroom</h3>
+                            <p>We are not just a tile shop; we are a complete **bathroom renovation showroom in Vadodara**. Explore **washroom tiles** paired with premium bath fittings.</p>
                         </div>
                         <div className="seo-text-block">
-                            <h3>Modern Designs</h3>
-                            <p>From **minimalist matte finishes** to **high-gloss digital tiles**, our Vadodara showroom stays updated with the latest 2026 global bathroom trends.</p>
+                            <h3>Waterproof & Durable</h3>
+                            <p>Looking for **waterproof bathroom tiles**? Our high-density porcelain tiles prevent seepage and maintain their **luxury tile collection** look for years.</p>
                         </div>
                     </div>
                 </div>

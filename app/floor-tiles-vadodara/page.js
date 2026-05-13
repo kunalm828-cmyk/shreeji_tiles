@@ -38,19 +38,24 @@ const FloorTilesPage = () => {
 
             <section className="category-seo-text section-padding bg-white">
                 <div className="container">
-                    <h2>Advanced Flooring Solutions for Vadodara Homes</h2>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginTop: '30px' }}>
+                    <h2>Living Room & Bedroom: Which floor tiles are durable?</h2>
+                    <p style={{ marginBottom: '40px', color: '#555' }}>
+                        If you are looking for **where to buy tiles in Vadodara** for your **living room floor**, Shreeji Tiles offers **scratch resistant floor tiles** and **marble finish vitrified tiles** that last a lifetime. 
+                        We are the **best flooring showroom** for **villa flooring tiles** and modern apartments.
+                    </p>
+                    
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
                         <div className="seo-text-block">
-                            <h3>Double Charge Vitrified</h3>
-                            <p>For high-traffic areas, our **double charge vitrified tiles** offer extreme durability and color longevity. Ideal for commercial and residential use in Vadodara.</p>
+                            <h3>Luxury Floor Tiles Collection</h3>
+                            <p>Our **large format tiles** (800x1600mm) create a seamless, marble-like look for **bungalow flooring** in Manjalpur and Karelibaug. These are the **best tiles for living room** luxury.</p>
                         </div>
                         <div className="seo-text-block">
-                            <h3>Large Format Luxury</h3>
-                            <p>Make your rooms look bigger with our **large format floor tiles**. These tiles reduce grout lines and create a seamless, premium look in modern apartments.</p>
+                            <h3>Commercial Flooring Solutions</h3>
+                            <p>Looking for **office floor tiles** or **restaurant flooring solutions**? Our heavy-duty vitrified range handles high traffic with ease while maintaining a premium aesthetic.</p>
                         </div>
                         <div className="seo-text-block">
-                            <h3>Scratch Resistant</h3>
-                            <p>Our **premium floor tiles** are highly resistant to scratches and household chemicals, ensuring your floors stay beautiful for decades.</p>
+                            <h3>Italian Tiles Design</h3>
+                            <p>We provide **imported tiles in Vadodara** with **Italian tiles design** patterns, giving your home an international appeal at competitive prices.</p>
                         </div>
                     </div>
                 </div>
