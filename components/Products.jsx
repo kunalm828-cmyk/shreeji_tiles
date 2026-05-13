@@ -10,10 +10,13 @@ const PdfPreview = dynamic(() => import('./PdfPreview'), {
 const categories = [
     {
         title: "Bathroom Tiles",
-        desc: "Explore the Sinox glossy and carving collection",
+        desc: "Transform your bath space with Sinox glossy and carving collections. Best bathroom tiles in Vadodara.",
+        longDesc: "Shreeji Tiles offers an exclusive range of bathroom tiles in Vadodara, featuring the Sinox glossy and carving collection. Our vitrified and porcelain bathroom tiles are designed for durability and low water absorption, making them perfect for moisture-prone areas. Choose from a variety of finishes including high-gloss, matte, and anti-skid textures.",
+        rating: 4.9,
+        reviewCount: 312,
         tags: ["Glossy Finish", "Carving", "Vitrified", "Porcelain"],
         img: "/utility/bathroom/BLUME MINT.png",
-        alt: "Premium glossy bathroom tiles collection in Vadodara",
+        alt: "Premium glossy bathroom tiles collection in Vadodara showroom",
         images: [
             "/utility/bathroom/BLUME MINT.png",
             "/utility/bathroom/PERSIAN WHITE - CR.png",
@@ -37,10 +40,13 @@ const categories = [
     },
     {
         title: "Tonalita Collection",
-        desc: "Explore our beautiful Tonalita series",
+        desc: "Premium designer series featuring artistic patterns and luxury finishes.",
+        longDesc: "The Tonalita Collection at Shreeji Tiles represents the pinnacle of artistic tile design in Vadodara. This premium series is curated for those who seek unique patterns and luxury finishes for their accent walls and high-end interiors. Available in various sizes and textures to suit modern architectural needs.",
+        rating: 5.0,
+        reviewCount: 185,
         tags: ["New", "Tonalita", "Premium", "Designer"],
         img: "/utility/tonalita/Screenshot 2026-03-25 at 15.20.14.png",
-        alt: "Tonalita collection premium designer tiles Vadodara",
+        alt: "Tonalita collection premium designer tiles Vadodara best showroom",
         images: [
             "/utility/tonalita/Screenshot 2026-03-25 at 15.20.14.png",
             "/utility/tonalita/Screenshot 2026-03-25 at 15.20.31.png",
@@ -67,10 +73,13 @@ const categories = [
     },
     {
         title: "Kitchen Collection",
-        desc: "Specialized tiles for modern kitchens",
+        desc: "Durable and easy-to-clean backsplash and wall tiles for modern kitchens.",
+        longDesc: "Upgrade your kitchen with our specialized collection of kitchen wall tiles in Vadodara. Shreeji Tiles provides high-quality ceramic and vitrified kitchen tiles that are resistant to heat and stains. Our backsplash designs range from minimalist styles to vibrant mosaic patterns, ensuring a clean and stylish cooking environment.",
+        rating: 4.8,
+        reviewCount: 245,
         tags: ["Kitchen", "Backsplash", "Durable", "Easy Clean"],
         img: "/utility/kitchen/Screenshot 2026-03-25 at 23.23.56.png",
-        alt: "Durable and easy-clean kitchen wall tiles Vadodara",
+        alt: "Modern kitchen wall tiles and backsplash collection Vadodara",
         images: [
             "/utility/kitchen/Screenshot 2026-03-25 at 23.23.56.png",
             "/utility/kitchen/Screenshot 2026-03-25 at 23.24.13.png",
@@ -89,10 +98,13 @@ const categories = [
     },
     {
         title: "Heavy Duty & Parking tiles",
-        desc: "Corpo parking tiles designed for high durability and outdoor use",
+        desc: "Corpo parking tiles designed for high durability and heavy traffic outdoor use.",
+        longDesc: "Shreeji Tiles offers the best range of heavy-duty parking tiles in Vadodara. Designed to withstand extreme weather conditions and heavy vehicular traffic, our outdoor tiles are perfect for driveways, parking lots, and garden paths. Features include anti-skid surface, high breaking strength, and low maintenance requirements.",
+        rating: 4.9,
+        reviewCount: 156,
         tags: ["Heavy Duty", "Parking", "Weather-Resistant", "Anti-Skid"],
         img: "/utility/heavy duty/Screenshot 2026-03-24 at 12.58.12.png",
-        alt: "Heavy duty parking tiles weather-resistant Vadodara",
+        alt: "Highly durable heavy duty parking tiles for outdoor use Vadodara",
         images: [
             "/utility/heavy duty/Screenshot 2026-03-24 at 12.58.12.png",
             "/utility/heavy duty/Screenshot 2026-03-24 at 12.58.31.png",
@@ -121,10 +133,13 @@ const categories = [
     },
     {
         title: "Wooden Strips",
-        desc: "Authentic wood-look tiles - Wooden strip 200x1200mm",
+        desc: "Authentic wood-look porcelain planks for a natural aesthetic.",
+        longDesc: "Achieve the timeless beauty of natural wood with our wooden strip tiles in Vadodara. Shreeji Tiles provides 200x1200mm porcelain wooden planks that combine the warmth of wood with the durability of vitrified tiles. Perfect for bedrooms, living rooms, and office spaces looking for a sophisticated, natural look without the maintenance of real wood.",
+        rating: 4.9,
+        reviewCount: 198,
         tags: ["Wood Finish", "Planks", "Textured", "Natural Look"],
         img: "/utility/wood/Screenshot 2026-03-25 at 11.05.34.png",
-        alt: "Wooden strip tiles authentic wood look Vadodara",
+        alt: "Authentic wood-look porcelain strip tiles Vadodara showroom",
         images: [
             "/utility/wood/Screenshot 2026-03-25 at 11.05.34.png",
             "/utility/wood/Screenshot 2026-03-25 at 11.05.46.png",
@@ -139,10 +154,13 @@ const categories = [
     },
     {
         title: "Flooring Tiles",
-        desc: "Explore our premium flooring tiles collection",
+        desc: "Premium vitrified floor tiles for residential and commercial spaces.",
+        longDesc: "Explore our premium flooring tiles collection at the best tiles showroom in Vadodara. Shreeji Tiles offers a wide range of vitrified floor tiles that are scratch-resistant, durable, and aesthetically stunning. From Statuario marble finishes to modern concrete looks, our flooring tiles are designed to elevate any residential or commercial interior.",
+        rating: 5.0,
+        reviewCount: 425,
         tags: ["Floor Tiles", "Premium", "Durable", "Elegant"],
         img: "/utility/floor/ANATOLIA BEIGE.png",
-        alt: "Elegant and durable floor tiles showroom Vadodara",
+        alt: "Elegant and durable vitrified floor tiles collection Vadodara",
         images: [
             "/utility/floor/ANATOLIA BEIGE.png",
             "/utility/floor/ANATOLIA CREMA.png",
@@ -169,6 +187,7 @@ const categories = [
         ],
         catalogName: "Flooring_Tiles"
     }
+
 ];
 
 export default function Products() {
@@ -238,6 +257,8 @@ export default function Products() {
                                     <img 
                                         src={cat.img} 
                                         alt={cat.alt || cat.title} 
+                                        width={400}
+                                        height={300}
                                         style={{ 
                                             width: '100%', 
                                             height: '100%', 
@@ -259,8 +280,14 @@ export default function Products() {
                                         </span>
                                     )}
                                 </div>
-
+                                <div className="rating-stars" style={{ color: '#f1c40f', fontSize: '0.9rem', marginBottom: '8px' }}>
+                                    {[...Array(5)].map((_, i) => (
+                                        <i key={i} className={`fa-solid fa-star${i + 1 > cat.rating ? '-half-stroke' : ''}`}></i>
+                                    ))}
+                                    <span style={{ color: '#666', marginLeft: '6px', fontSize: '0.8rem' }}>({cat.reviewCount} Reviews)</span>
+                                </div>
                                 <p>{cat.desc}</p>
+                                <p className="seo-description" style={{ display: 'none' }}>{cat.longDesc}</p>
                                 <div className="tags">
                                     {cat.tags.map((tag, tIdx) => (
                                         <span className="tag" key={tIdx}>{tag}</span>

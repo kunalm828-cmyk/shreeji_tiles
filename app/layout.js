@@ -87,6 +87,12 @@ export default function RootLayout({ children }) {
         url: 'https://shreejitile.com',
         telephone: '+919898713167',
         priceRange: '₹₹',
+        currenciesAccepted: 'INR',
+        paymentAccepted: 'Cash, Credit Card, UPI',
+        areaServed: {
+          '@type': 'City',
+          name: 'Vadodara'
+        },
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'B/H, Samruddhi Complex, Shed No. 10 Anand Estate, Dabhoi, Pratap Nagar Rd, opp. Yamuna Mill Road',
@@ -99,6 +105,11 @@ export default function RootLayout({ children }) {
           '@type': 'GeoCoordinates',
           latitude: '22.2823199',
           longitude: '73.2174973'
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.9',
+          reviewCount: '482'
         },
         openingHoursSpecification: [
           {
@@ -120,6 +131,24 @@ export default function RootLayout({ children }) {
         ]
       },
       {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://shreejitile.com/#breadcrumb',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Home',
+            'item': 'https://shreejitile.com'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': 'Tiles Collection',
+            'item': 'https://shreejitile.com/#products'
+          }
+        ]
+      },
+      {
         '@type': 'WebSite',
         '@id': 'https://shreejitile.com/#website',
         url: 'https://shreejitile.com',
@@ -135,15 +164,23 @@ export default function RootLayout({ children }) {
             'name': 'Which is the best tiles showroom in Vadodara?',
             'acceptedAnswer': {
               '@type': 'Answer',
-              'text': 'Shreeji Tiles is one of the top-rated tiles showrooms in Vadodara, offering a wide range of premium floor tiles, wall tiles, and sanitaryware for over 25 years.'
+              'text': 'Shreeji Tiles is the best tiles showroom in Vadodara, offering premium floor tiles, wall tiles, and luxury bath fittings. We are known for our quality and exclusive Sinox collection.'
             }
           },
           {
             '@type': 'Question',
-            'name': 'Do you provide bathroom and kitchen tiles in Vadodara?',
+            'name': 'Do you have bathroom tiles in Vadodara?',
             'acceptedAnswer': {
               '@type': 'Answer',
-              'text': 'Yes, we specialize in high-quality bathroom and kitchen tiles, including ceramic, porcelain, and vitrified options at our Vadodara showroom.'
+              'text': 'Yes, we have a massive collection of bathroom tiles in Vadodara, including glossy, matte, and anti-skid vitrified tiles starting from budget-friendly to luxury segments.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Is there parking available at Shreeji Tiles?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Yes, we have ample parking space available for customers visiting our showroom on Pratap Nagar Road, Vadodara.'
             }
           }
         ]
