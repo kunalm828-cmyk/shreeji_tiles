@@ -73,7 +73,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--white);
+    background-color: #000000; /* Pure black for maximum contrast with white logo */
     transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
     z-index: 1;
 }
@@ -87,7 +87,6 @@ img {
 .splash-logo-wrapper img {
     height: 120px;
     width: auto;
-    filter: invert(1);
     animation: floatingLogo 2s ease-in-out infinite alternate;
 }
 
@@ -183,7 +182,37 @@ h6 {
     border: 1px solid rgba(255, 255, 255, 0.6);
 
     width: calc(100% - 40px);
-    max-width: 1050px;
+    max-width: 1120px;
+}
+
+/* Adjustments when scrolled for desktop/tablet screens (min-width: 769px) */
+@media (min-width: 769px) {
+    .navbar.scrolled .nav-container {
+        display: flex;
+        justify-content: space-between; /* Space out items inside the capsule */
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 25px !important; /* Keep the phone number fully inside */
+    }
+    
+    .navbar.scrolled .navbar-logo-img {
+        margin-left: 0 !important; /* Keep the logo inside the capsule */
+    }
+    
+    .navbar.scrolled .nav-links {
+        gap: 8px; /* Reduced from 15px to save space */
+    }
+    
+    .navbar.scrolled .nav-links a {
+        padding: 8px 10px; /* Reduced from 8px 16px to save space */
+        font-size: 0.8rem;
+    }
+    
+    .navbar.scrolled .nav-contact {
+        font-size: 0.85rem;
+        padding-left: 12px; /* Space between vertical separator line and call icon */
+        margin-right: 5px; /* Push inward from the right border */
+    }
 }
 
 /* Restore original extremely translucent blur strictly for Safari */
@@ -1493,7 +1522,7 @@ h6 {
 .card-img {
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: auto;
     background: #f0f0f0;
 }
 
@@ -1636,7 +1665,7 @@ h6 {
 
     /* Navbar */
     .navbar {
-        padding: 10px 0 !important;
+        padding: 10px 20px !important;
     }
 
     .navbar-logo-img {
@@ -1920,11 +1949,10 @@ h6 {
 .premium-gold-card::before {
     content: '';
     position: absolute;
-    /* Create a massive circle mask rotating endlessly */
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    top: 50%;
+    left: 50%;
+    width: 650px; /* Perfect square large enough to cover the card diagonal */
+    height: 650px; /* Perfect square */
     /* Two opposite strips rendered cleanly along the conic slice arc */
     background: conic-gradient(from 0deg at 50% 50%, 
                 transparent 0deg, 
@@ -1937,6 +1965,7 @@ h6 {
     animation: goldRevolve 6s linear infinite;
     z-index: -2;
     opacity: 0.9;
+    transform-origin: center;
 }
 
 .premium-gold-card::after {
@@ -1957,9 +1986,10 @@ h6 {
 .premium-gold-card:hover::before {
     animation: none !important; 
     background: linear-gradient(60deg, #D4AF37, #FFD700, #fff7b0, #D4AF37);
+    transform: translate(-50%, -50%);
 }
 
 @keyframes goldRevolve {
-    0%   { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0%   { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }

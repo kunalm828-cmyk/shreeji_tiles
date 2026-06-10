@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
-            <Image src="/utility/logo.png" alt="Shreeji Tiles - Best Tiles Showroom in Vadodara" className="navbar-logo-img" width={200} height={60} style={{ height: '60px', width: 'auto', objectFit: 'contain', filter: 'invert(1)' }} priority />
+            <Image src="/bglogo.png" alt="Shreeji Tiles - Best Tiles Showroom in Vadodara" className="navbar-logo-img" width={200} height={60} style={{ height: '60px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} priority />
             
             <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <i className="fa-solid fa-bars"></i>
